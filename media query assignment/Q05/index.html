@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            height: 600px;
+            width: auto;
+        }
+        .box{
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            padding: 30px;
+        }
+        .container .selected .box2 {
+            display: flex;
+            flex-direction: column;
+            height: 230px;
+           
+        }
+        .container .selected .box3 {
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+
+        }
+        .box1{
+            background-color: rgb(10, 10, 10);
+            
+        }
+        .box2{
+            background-color: green;
+        }
+        .box3{
+            background-color: orange;
+        }
+        .box4{
+            background-color: rgb(10, 10, 10);
+            
+        }
+        @media screen and (max-width:500px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+            .box{
+                color: white;
+                font-size: 30px;
+                text-align: center;
+                padding: 30px;
+            }
+            .box2{
+                height: 50px;
+            }
+            .box2{
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box1</div>
+        <div class="selected">
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+        </div>
+        <div class="box box4">Box4</div>
+    </div>
+</body>
+</html>
